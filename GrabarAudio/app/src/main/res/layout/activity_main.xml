@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lilianpaola.grabaraudio.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:id="@+id/btRec"
+        android:background="@drawable/botonmic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btRec"
+        android:layout_alignRight="@+id/btRec"
+        android:layout_alignEnd="@+id/btRec"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btStop"
+        android:background="@drawable/stopbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btStop"
+        android:layout_alignRight="@+id/btStop"
+        android:layout_alignEnd="@+id/btStop"
+        android:layout_marginTop="46dp"
+        android:id="@+id/btPlay"
+        android:background="@drawable/playbutton" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btPlay"
+        android:layout_toLeftOf="@+id/btPlay"
+        android:layout_toStartOf="@+id/btPlay"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/btNuevo"
+        android:onClick="reiniciarActivity(this)" />
+</RelativeLayout>
